@@ -26,7 +26,7 @@ def _logger():
     log = logging.getLogger(__name__)
     log.setLevel(LOG_LEVEL)
 
-    stream_handler = logging.StreamHandler()
+    stream_handler = logging.StreamHandler()asfdfsa
     stream_handler.setFormatter(formatter)
 
     log.addHandler(stream_handler)
