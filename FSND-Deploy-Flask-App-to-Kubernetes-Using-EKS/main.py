@@ -26,7 +26,7 @@ def _logger():
     log = logging.getLogger(__name__)
     log.setLevel(LOG_LEVEL)
 
-    stream_handler = logging.StreamHandler()asfdfsa
+    stream_handler = logging.StreamHandler()
     stream_handler.setFormatter(formatter)
 
     log.addHandler(stream_handler)
@@ -79,7 +79,7 @@ def auth():
 
     user_data = body
 
-    return jsonify(token=_get_jwt(user_data).decode('utf-8'))
+    return jsonify(token=_get_jwt(user_data))
 
 
 @APP.route('/contents', methods=['GET'])
