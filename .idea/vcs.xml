@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FSND" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FSND/FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity/FSND" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity/FSND/FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity/FSND/projects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity/FSND/projects/FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity/class-demos/FSND" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udacity/projects" vcs="Git" />
+  </component>
+</project>
