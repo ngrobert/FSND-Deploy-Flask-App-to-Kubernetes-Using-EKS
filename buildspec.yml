@@ -26,8 +26,8 @@ phases:
         - REPOSITORY_URI=342476802371.dkr.ecr.us-east-2.amazonaws.com/ecrdockerrepository-a5jpbukrve0m
         - echo $REPOSITORY_URI
         - echo $TAG
-        - ECR_REPO="simple_jwt_api"
-        - echo $ECR_REPO
+#        - ECR_REPO="simple_jwt_api"
+#        - echo $ECR_REPO
         - sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' simple_jwt_api.yml
         - $(aws ecr get-login --no-include-email)
         - export KUBECONFIG=$HOME/.kube/config
@@ -40,8 +40,9 @@ phases:
       - ls -altr
       - echo $REPOSITORY_URI
       - echo $TAG
-      - ECR_REPO="simple_jwt_api"
-      - docker build --tag $ECR_REPO:$TAG .
+#      - ECR_REPO="simple_jwt_api"
+#      - docker build --tag $ECR_REPO:$TAG .
+      - docker build --tag $REPOSITORY_URI:$TAG .
 
 
   post_build:
