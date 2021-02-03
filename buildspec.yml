@@ -23,7 +23,7 @@ phases:
   pre_build:
       commands:
         - TAG="$REPOSITORY_NAME.$REPOSITORY_BRANCH.$ENVIRONMENT_NAME.$(date +%Y-%m-%d.%H.%M.%S).$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
-        - REPOSITORY_URI=342476802371.dkr.ecr.us-east-2.amazonaws.com/ecrdockerrepository-a5jpbukrve0m
+#        - REPOSITORY_URI=342476802371.dkr.ecr.us-east-2.amazonaws.com/ecrdockerrepository-a5jpbukrve0m
         - echo $REPOSITORY_URI
         - echo $TAG
 #        - ECR_REPO="simple_jwt_api"
