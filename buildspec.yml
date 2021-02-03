@@ -33,7 +33,7 @@ phases:
         - export KUBECONFIG=$HOME/.kube/config
         - pip install -r requirements.txt
 #        - python -m pytest test_main.py
-  build:s
+  build:
     commands:
       - ls -altr
       - echo $REPOSITORY_URI
