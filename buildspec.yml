@@ -42,6 +42,13 @@ phases:
 #      - ECR_REPO="simple_jwt_api"
 #      - docker build --tag $ECR_REPO:$TAG .
 
+  post_build:
+    commands:
+      - docker-compose push
+      - printf '[{"name":"","imageUri":"<path of your image"}]' > imagedefinitions.json
+      - cat imagedefinitions.json
+  artifacts:
+    files: imagedefinitions.json
 
   post_build:
     commands:
