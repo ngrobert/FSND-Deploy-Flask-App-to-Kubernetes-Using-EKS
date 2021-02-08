@@ -22,7 +22,7 @@ phases:
         - python -m pytest test_main.py
 #       - ECR_REPO="simple_jwt_api"
 #       - echo $ECR_REPO
-        - sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' simple_jwt_api.yml
+        - sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' simple-jwt-api.yml
         - $(aws ecr get-login --no-include-email)
         - export KUBECONFIG=$HOME/.kube/config
         - pip install -r requirements.txt
